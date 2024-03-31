@@ -3,48 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/main.css" rel="stylesheet" />
     <title>Akram's Portfolio</title>
 </head>
 <body>
     <!-- Start the navbar --> 
-    <nav id="Navbar">
-        <div>
-            <img src="./pictures/logo.png" alt="logo picture" />
-            <span>
-                <span>P</span>
-                ortfolio
+    <nav id="Navbar" class="navbar">
+        <div class="brand">
+            <img class="logo" src="./pictures/logo.png" alt="logo picture" />
+            <span class="brand-text">
+                <span class="p-letter">P</span>ortfolio
             </span>
         </div>
-        <ul>
-            <li>Home</li>
-            <li>About me</li>
-            <li>Services</li>
-            <li>Projects</li>
-            <li>Testimonials</li>
-            <li>Contact</li>
-        </ul>
-        <button>Download CV</button>
+        <div class="nav-items">
+            <ul class="navbar-items">
+                <li>Home</li>
+                <li>About me</li>
+                <li>Services</li>
+                <li>Projects</li>
+                <li>Testimonials</li>
+                <li>Contact</li>
+            </ul>
+            <button class="download-cv">Download CV</button>
+        </div>
     </nav>
     <!-- End the navbar -->
     <!-- Start of Bio -->
-    <div id="Bio">
-        <div>
+    <div id="Bio" class="bio">
+        <div class="bio-about">
             <div>
-                <span>Hi I am</span>
-                <span>Akram Bengueddoudj</span>
-                <h2>Web Developer</h2>
+                <div class="info-name">
+                    <span class="info-hi">Hi I am</span>
+                    <span class="info-fullname">Akram Bengueddoudj</span>
+                    <h2 class="info-web">Web</h2>
+                    <h2 class="info-developer">Developer</h2>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur. 
+                    Tristique amet sed massa nibh lectus netus in. 
+                    Aliquet donec morbi convallis pretium. Turpis
+                    tempus pharetra
+                </p>
+                <button class="hire-me">Hire Me</button>
             </div>
-            <div>
-                <img src="./pictures/border.svg">
-                <img src="./pictures/me.png" alt="Profile Picture"/>
+            <div class="me-container">
+                <img class="me-border" src="./pictures/border.svg">
+                <img class="me-picture" src="./pictures/me.png" alt="Profile Picture"/>
             </div>
-            <p>
-                Lorem ipsum dolor sit amet consectetur. 
-                Tristique amet sed massa nibh lectus netus in. 
-                Aliquet donec morbi convallis pretium. Turpis
-                tempus pharetra
-            </p>
-            <button>Hire Me</button>
         </div>
         <div>
             <img src="./pictures/Facebook.svg" alt="Facebook">
@@ -162,5 +167,35 @@
         
     </div>
     <!-- End of Contact Us -->
+    <!-- Start of footer -->
+    <footer id="footer">
+        <div>
+            <img src="./pictures/logo.png" alt="logo">
+            <span>
+                <span>P</span>
+                ortfolio
+            </span>
+        </div>
+        <ul>
+            <li>Home</li>
+            <li>About Me</li>
+            <li>Services</li>
+            <li>Projects</li>
+            <li>Testimonials</li>
+            <li>Contact</li>
+        </ul>
+        <div>
+            <img src="./pictures/Facebook.svg" alt="facebook" />
+            <img src="./pictures/Instagram.svg" alt="instagram">
+            <img src="./pictures/LinkedIn.svg" alt="linkedin">
+            <img src="./pictures/Twitter.svg" alt="twitter">
+        </div>
+        <div>
+            &copy; 2023 
+            <span>Akram</span>
+            All Rights Reserved , Inc.
+        </div>
+    </footer>
+    <!-- End of footer -->
 </body>
 </html>

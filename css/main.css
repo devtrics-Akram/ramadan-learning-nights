@@ -1,0 +1,90 @@
+.p-letter {
+    font-weight: bold;
+    font-size: 48px;
+}
+.logo {
+    width: 60px;
+    height: 60px;
+}
+.brand {
+    display: inline-flex;
+    gap: 5px;
+    align-items: center;
+}
+.brand-text {
+    font-size: 36px;
+}
+.navbar-items {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    width: 600px;
+    justify-content: space-between;
+}
+.navbar-items li {
+    display: inline;
+    font-size: 21px;
+}
+.download-cv,
+.hire-me {
+    background-color: #FD6F00;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    height: 52px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 21px;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px
+}
+.nav-items {
+    display: flex;
+    align-items: center;
+    gap: 40px
+}
+.bio {
+    margin-top: 60px;
+}
+.info-name {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.info-developer {
+    margin: 0;
+    padding: 0;
+    margin-left: 60px
+}
+.info-web {
+    margin: 0;
+    padding: 0;
+}
+.info-hi {
+    font-size: 21px;
+}
+.info-fullname {
+    font-size: 32px;
+    color: #FD6F00;
+}
+h2 {
+    font-size: 48px;
+}
+.bio-about {
+    display: flex;
+    justify-content: space-between;
+}
+.me-container {
+    position: relative;
+}
+.me-picture {
+    position: absolute;
+    top: 6px;
+    right: 7px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
