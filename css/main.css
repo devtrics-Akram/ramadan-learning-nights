@@ -1,3 +1,6 @@
+body {
+    padding: 0 10%
+}
 .p-letter {
     font-weight: bold;
     font-size: 48px;
@@ -24,6 +27,7 @@
 .navbar-items li {
     display: inline;
     font-size: 21px;
+    font-family: 'Serif';
 }
 .download-cv,
 .hire-me {
@@ -31,10 +35,13 @@
     border: none;
     outline: none;
     border-radius: 5px;
-    height: 52px;
-    padding-right: 20px;
     padding-left: 20px;
+    padding-right: 20px;
+    height: 52px;
     font-size: 21px;
+}
+.hire-me {
+    width: 50%;
 }
 .navbar {
     display: flex;
@@ -45,10 +52,13 @@
 .nav-items {
     display: flex;
     align-items: center;
-    gap: 40px
+    gap: 10px
 }
 .bio {
     margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
 }
 .info-name {
     display: flex;
@@ -77,14 +87,98 @@ h2 {
 .bio-about {
     display: flex;
     justify-content: space-between;
+    gap: 12rem;
 }
 .me-container {
     position: relative;
+    width: 50%;
 }
 .me-picture {
     position: absolute;
-    top: 6px;
-    right: 7px;
+    top: -1px;
+    right: -1px;
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
+    width: 400px;
+    height: 400px;
+}
+.me-border {
+    width: 400px;
+    height: 400px;
+}
+.contact-icons {
+    align-self: end;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    gap: 20px
+}
+.about-me {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 60px;
+}
+.progress-container {
+    display: flex;
+    flex-direction: column;
+}
+.my-range::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    background-color: #FD6F00;
+    border: 3px #FFF solid;
+}
+.my-range::-webkit-slider-thumb {
+    -webkit-appearance: none; /* For WebKit browsers */
+  width: 20px;
+  height: 20px;
+  background-image: url('../pictures/logo.png');
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add shadow */
+}
+.carousel-items-container {
+    display: flex;
+    overflow: hidden;
+    height: 250px;
+}
+.carousel-item {
+    width: 100%;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+.carousel-item:nth-child(1) {
+    flex-shrink: 0;
+}
+.carousel-item-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+.quote {
+    flex-wrap: wrap;
+}
+.carousel-picture {
+    width: 200px;
+    height: 200px;
+}
+.carousel-name {
+    font-weight: bold;
+}
+.indicators {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+}
+.indicators span {
+    display: flex;
+    width: 60px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #DFDFDF;
+}
+.indicators span.active {
+    background-color: #FD6F00;
 }

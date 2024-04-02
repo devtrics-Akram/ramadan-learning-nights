@@ -51,7 +51,7 @@
                 <img class="me-picture" src="./pictures/me.png" alt="Profile Picture"/>
             </div>
         </div>
-        <div>
+        <div class="contact-icons">
             <img src="./pictures/Facebook.svg" alt="Facebook">
             <img src="./pictures/Instagram.svg" alt="Instagram">
             <img src="./pictures/Twitter.svg" alt="Twitter">
@@ -60,35 +60,37 @@
     </div>
     <!-- End of Bio -->
     <!-- Start of About Me -->
-    <div id="About-Me">
-        <h3>About Me</h3>
-        <p>
-            Lorem ipsum dolor sit amet consectetur. 
-            Tristique amet sed massa nibh lectus netus in.
-            Aliquet donec morbi convallis pretium. Turpis tempus pharetra
-        </p>
-        <!-- progress bars -->
+    <div id="About-Me" class="about-me">
         <div>
+            <h2>About Me</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur. 
+                Tristique amet sed massa nibh lectus netus in.
+                Aliquet donec morbi convallis pretium. Turpis tempus pharetra
+            </p>
+            <!-- progress bars -->
             <div>
-                <label for="ux_range">UX</label>
-                <input id="ux_range" type="range" value="80">
-            </div>
-            <div>
-                <label for="ux_range">Website Design</label>
-                <input id="website_design_range" type="range" value="75">
-            </div>
-            <div>
-                <label for="ux_range">App Design</label>
-                <input id="app_design_range" type="range" value="90">
-            </div>
-            <div>
-                <label for="ux_range">Graphic Design</label>
-                <input id="graphic_design_range" type="range" value="80">
+                <div class="progress-container">
+                    <label for="ux_range">UX</label>
+                    <input id="ux_range" type="range" value="80" class="my-range">
+                </div>
+                <div class="progress-container">
+                    <label for="ux_range">Website Design</label>
+                    <input id="website_design_range" type="range" value="75" class="my-range">
+                </div>
+                <div class="progress-container">
+                    <label for="ux_range">App Design</label>
+                    <input id="app_design_range" type="range" value="90" class="my-range">
+                </div>
+                <div class="progress-container">
+                    <label for="ux_range">Graphic Design</label>
+                    <input id="graphic_design_range" type="range" value="80" class="my-range">
+                </div>
             </div>
         </div>
-        <div>
-            <img src="./pictures/border.svg">
-            <img src="./pictures/me.png" alt="Profile Picture"/>
+        <div class="me-container">
+            <img class="me-border" src="./pictures/border.svg">
+            <img class="me-picture" src="./pictures/me.png" alt="Profile Picture"/>
         </div>
     </div>
     <!-- End of About Me -->
@@ -101,8 +103,18 @@
             quaerat a? Autem nulla nobis reiciendis!
         </p>
         <div id="Carousel">
-            <div>
-                <div>
+            <div class="carousel-items-container">
+                <div class="carousel-item">
+                    <img src="./pictures/comment1.png" alt="picture for comment" class="carousel-picture">
+                    <div class="carousel-item-text">
+                        <q class="quote">
+                            "Lorem ipsum dolor sit amet consectetur. In enim cursus odio accumsan. Id leo urna velit neque mattis id tellus arcu condimentum. Augue dictum dolor elementum convallis dignissim malesuada commodo ultrices."
+                        </q>
+                        <span class="carousel-name">Name</span>
+                        <span>CEO</span>
+                    </div>
+                </div>
+                <div class="carousel-item">
                     <img src="./pictures/comment1.png" alt="picture for comment">
                     <div>
                         <q>
@@ -112,7 +124,7 @@
                         <span>CEO</span>
                     </div>
                 </div>
-                <div>
+                <div class="carousel-item">
                     <img src="./pictures/comment1.png" alt="picture for comment">
                     <div>
                         <q>
@@ -122,17 +134,7 @@
                         <span>CEO</span>
                     </div>
                 </div>
-                <div>
-                    <img src="./pictures/comment1.png" alt="picture for comment">
-                    <div>
-                        <q>
-                            "Lorem ipsum dolor sit amet consectetur. In enim cursus odio accumsan. Id leo urna velit neque mattis id tellus arcu condimentum. Augue dictum dolor elementum convallis dignissim malesuada commodo ultrices."
-                        </q>
-                        <span>Name</span>
-                        <span>CEO</span>
-                    </div>
-                </div>
-                <div>
+                <div class="carousel-item">
                     <img src="./pictures/comment1.png" alt="picture for comment">
                     <div>
                         <q>
@@ -143,9 +145,9 @@
                     </div>
                 </div>
             </div>
-            <div>
+            <div class="indicators">
                 <span></span>
-                <span></span>
+                <span class="active"></span>
                 <span></span>
                 <span></span>
             </div>

@@ -1,0 +1,8 @@
+body {
+    background-image: url('../pictures/logo.png');
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+button {
+    outline: 2px solid #f34;
+}
